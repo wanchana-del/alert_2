@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>กำลังโหลดข้อมูล - ระบบโทรมาตรขุนด่านปราการชล</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Sarabun', sans-serif; }
+    body { background: #f0f2f5; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+    .skeleton-container {
+        background: #ffffff;
+        border: 1px solid #ccd0d5;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 450px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* ตัววิ่งแสงสะท้อนแบบ Facebook Skeleton */
+    @keyframes shine {
+        0% { background-position: -200px 0; }
+        100% { background-position: calc(200px + 100%) 0; }
+    }
+
+    .skeleton {
+        background: #f6f7f9;
+        background: linear-gradient(90deg, #f0f2f5 0px, #e4e6eb 40px, #f0f2f5 80px);
+        background-size: 600px;
+        animation: shine 1.5s infinite linear;
+        border-radius: 4px;
+    }
+
+    .skeleton-header { display: flex; align-items: center; margin-bottom: 20px; }
+    .skeleton-avatar { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; flex-shrink: 0; }
+    .skeleton-lines { flex-grow: 1; }
+    .skeleton-line { height: 12px; margin-bottom: 8px; }
+    .skeleton-line.short { width: 60%; }
+    .skeleton-line.long { width: 100%; }
+
+    .skeleton-box {
+        height: 180px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+    .skeleton-footer-line {
+        height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .loading-text {
+        text-align: center;
+        font-size: 14px;
+        color: #65676b;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+
+<div class="skeleton-container">
+    <!-- ส่วนหัวจำลองโปรไฟล์/โลโก้ -->
+    <div class="skeleton-header">
+        <div class="skeleton skeleton-avatar"></div>
+        <div class="skeleton-lines">
+            <div class="skeleton skeleton-line short"></div>
+            <div class="skeleton skeleton-line long"></div>
+        </div>
+    </div>
+
+    <!-- กล่องจำลองรูปภาพหรือแผนที่ -->
+    <div class="skeleton skeleton-box"></div>
+
+    <!-- บรรทัดข้อความจำลอง -->
+    <div class="skeleton skeleton-line long"></div>
+    <div class="skeleton skeleton-line long"></div>
+    <div class="skeleton skeleton-line short"></div>
+
+    <div class="loading-text">กำลังโหลดข้อมูลระบบโทรมาตร...</div>
+</div>
+
+<script>
+    // จำลองการโหลดข้อมูล 2 วินาที แล้วเด้งเข้าหน้าแผนที่จริงอัตโนมัติ
+    setTimeout(() => {
+        window.location.href = "khundan.html"; 
+    },3000);
+</script>
+
+</body>
+</html>

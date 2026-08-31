@@ -1,0 +1,62 @@
+{
+    "ST.14": {
+        "state": "flat",
+        "stage": "normal",
+        "last_image": 0,
+        "slope": null,
+        "net_rise": 0,
+        "level": 23.641,
+        "points": 1,
+        "record_time": "05\/08\/2026 10:45",
+        "checked_at": "2026-08-05 10:46:35",
+        "last_alert": 0
+    },
+    "ST.15": {
+        "state": "flat",
+        "stage": "normal",
+        "last_image": 0,
+        "slope": null,
+        "net_rise": 0,
+        "level": 27.496,
+        "points": 1,
+        "record_time": "05\/08\/2026 10:45",
+        "checked_at": "2026-08-05 10:46:35",
+        "last_alert": 0
+    },
+    "ST.16": {
+        "state": "flat",
+        "stage": "normal",
+        "last_image": 0,
+        "slope": null,
+        "net_rise": 0,
+        "level": 15.149,
+        "points": 1,
+        "record_time": "05\/08\/2026 10:45",
+        "checked_at": "2026-08-05 10:46:35",
+        "last_alert": 0
+    },
+    "ST.13": {
+        "state": "flat",
+        "stage": "normal",
+        "last_image": 0,
+        "slope": null,
+        "net_rise": 0,
+        "level": 4.24,
+        "points": 1,
+        "record_time": "05\/08\/2026 10:30",
+        "checked_at": "2026-08-05 10:46:35",
+        "last_alert": 0
+    },
+    "ST.01": {
+        "state": "flat",
+        "stage": "normal",
+        "last_image": 0,
+        "slope": null,
+        "net_rise": 0,
+        "level": 4.72,
+        "points": 1,
+        "record_time": "05\/08\/2026 10:30",
+        "checked_at": "2026-08-05 10:46:35",
+        "last_alert": 0
+    }
+}

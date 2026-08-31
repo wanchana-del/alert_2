@@ -1,0 +1,12 @@
+# 🔒 ป้องกันไม่ให้เข้าถึงไฟล์ตั้งค่าและฐานข้อมูลรหัสผ่านโดยตรงผ่าน URL
+<FilesMatch "^(config_data\.php|admin_db\.json)$">
+    Require all denied
+</FilesMatch>
+
+# เผื่อเซิร์ฟเวอร์เป็น Apache รุ่นเก่า (2.2 ลงไป)
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^(config_data\.php|admin_db\.json)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
